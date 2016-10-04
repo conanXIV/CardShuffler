@@ -2,12 +2,11 @@
 #include "utility.h"
 #include "globals.h"
 
-
 void LED::blink()
 {
-    const int blinkDuration = 1 * 1000; // ms
+  const int blinkDuration = 1 * 1000; // ms
 
-    delay(blinkDuration);   // wait for a second
+  delay(blinkDuration);   // wait for a second
 	sendLedState(ledOn);    // set the LED on
 	delay(blinkDuration);   // wait for a second
 	sendLedState(ledOff);   // set the LED off

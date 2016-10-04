@@ -31,7 +31,7 @@ public:
     : buttonPin_(buttonPin), delayTime_(10), buttonDown(HIGH), buttonUp(LOW), oldButtonState_(LOW) {};
 
 	bool checkButton();
-    void waitForButton();
+  void waitForButton();
 
 private:
     const uint8_t buttonDown;
