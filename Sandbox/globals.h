@@ -11,7 +11,7 @@ public:
     static Globals* getInstance() { return &globalInstance; }
     // Constructor
     Globals()
-    : inputPin(10), outputPin(13), boardRate(9600), delayTime(1000)
+    : inputPin(10), outputPin(0), boardRate(9600), delayTime(1000)
     {};
     // Members
     const int inputPin;

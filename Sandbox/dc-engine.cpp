@@ -2,7 +2,7 @@
 #include "dc-engine.h"
 #include "globals.h"
 
-void Engine::pulse()
+void DCEngine::pulse()
 {
   delay(1000);
   sendEngineState(engineOn);
@@ -10,7 +10,7 @@ void Engine::pulse()
   sendEngineState(engineOff);
 }
 
-void Engine::sendEngineState(uint8_t instruction)
+void DCEngine::sendEngineState(uint8_t instruction)
 {
     digitalWrite(enginePin_, instruction);
 }

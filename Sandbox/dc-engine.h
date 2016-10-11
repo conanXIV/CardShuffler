@@ -4,10 +4,10 @@
 
 #include <Arduino.h>
 
-class Engine
+class DCEngine
 {
 public:
-    Engine(int enginePin)
+    DCEngine(int enginePin)
     : enginePin_(enginePin), delayTime_(10), engineOn(HIGH), engineOff(LOW), engineState_(LOW) {};
 
     void pulse();

@@ -17,7 +17,7 @@ void StepEngine::run()
 { 
 	int Steps2Take;
     Steps2Take = 3 * STEPS_PER_OUTPUT_REVOLUTION / 2;  // Rotate CW 3/2 turn
-    setSpeed(1000);   
+    setSpeed(10);   
     step(Steps2Take);
     delay(1000);
   

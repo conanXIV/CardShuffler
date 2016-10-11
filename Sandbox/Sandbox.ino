@@ -7,6 +7,7 @@
 LED* led;
 Button* button;
 StepEngine* engine;
+//DCEngine* engine;
 
 void setup()
 {
@@ -25,7 +26,7 @@ void setup()
 
     //led = new LED(globals->outputPin);
     //button = new Button(globals->inputPin);
-    //engine = new Engine(globals->outputPin);
+    //engine = new DCEngine(globals->outputPin);
     engine = new StepEngine(8, 10, 9, 11);
 }
 
@@ -38,5 +39,5 @@ void loop()
         led->ledToggle();
     }*/
     //engine->pulse();
-    engine->run();
+    //engine->run();
 }
